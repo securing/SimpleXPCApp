@@ -1,6 +1,6 @@
 # Secure Privileged XPC Helper
 
-Building secure privileged XPC services is not trivial. During my [talk](https://objectivebythesea.com/v3/content.html#wRegula) "Abusing & Securing XPC in macOS apps" on [Objective By The Sea conference](https://objectivebythesea.com/v3/), I promised to share an example of a secure one. So, here it is!
+Building secure privileged XPC services is not trivial. During my [talk](https://www.securing.biz/en/abusing-securing-xpc-in-macos-apps/index.html) "Abusing & Securing XPC in macOS apps" on [Objective By The Sea conference](https://objectivebythesea.com/v3/), I promised to share an example of a secure one. So, here it is!
 
 ## Learn XPC exploitation
 
