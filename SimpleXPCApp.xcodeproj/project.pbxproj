@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1615BEE23FED6EB00D5CF4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1615BED23FED6EB00D5CF4A /* AppDelegate.swift */; };
+		F1615BF023FED6EB00D5CF4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1615BEF23FED6EB00D5CF4A /* ViewController.swift */; };
+		F1615BF223FED6ED00D5CF4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1615BF123FED6ED00D5CF4A /* Assets.xcassets */; };
+		F1615BF523FED6ED00D5CF4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1615BF323FED6ED00D5CF4A /* Main.storyboard */; };
+		F1615C1823FED7BB00D5CF4A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1615C1723FED7BB00D5CF4A /* main.swift */; };
+		F1615C1E23FED9CB00D5CF4A /* SimpleXPCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1615C1D23FED9CB00D5CF4A /* SimpleXPCProtocol.swift */; };
+		F1615C1F23FED9CB00D5CF4A /* SimpleXPCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1615C1D23FED9CB00D5CF4A /* SimpleXPCProtocol.swift */; };
+		F1615C3123FEDAE500D5CF4A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1615C3023FEDAE500D5CF4A /* Constants.swift */; };
+		F1615C3223FEDAE500D5CF4A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1615C3023FEDAE500D5CF4A /* Constants.swift */; };
+		F1615C3423FEDBF000D5CF4A /* XPCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1615C3323FEDBF000D5CF4A /* XPCDelegate.swift */; };
+		F1615C3623FEE87B00D5CF4A /* HelperInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1615C3523FEE87B00D5CF4A /* HelperInstaller.swift */; };
+		F1615C3923FEE90700D5CF4A /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1615C3823FEE90700D5CF4A /* ServiceManagement.framework */; };
+		F1615C3D23FEF02B00D5CF4A /* biz.securing.SimpleXPCService in Copy biz.securing.SimpleXPCService */ = {isa = PBXBuildFile; fileRef = F1615C1523FED7BB00D5CF4A /* biz.securing.SimpleXPCService */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F1615C4323FF147500D5CF4A /* ConnectionVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1615C4223FF147500D5CF4A /* ConnectionVerifier.swift */; };
+		F1615C4623FF233A00D5CF4A /* AuditTokenHack.h in Sources */ = {isa = PBXBuildFile; fileRef = F1615C4523FF233A00D5CF4A /* AuditTokenHack.h */; };
+		F1615C4B23FFF5C700D5CF4A /* AuditTokenHack.m in Sources */ = {isa = PBXBuildFile; fileRef = F1615C4A23FFF5C700D5CF4A /* AuditTokenHack.m */; };
+		F1615C4D2400305E00D5CF4A /* securing_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F1615C4C2400305E00D5CF4A /* securing_logo.png */; };
+		F1615C4F240036C500D5CF4A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1615C4E240036C500D5CF4A /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1615C3A23FEEF4F00D5CF4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1615BE223FED6EB00D5CF4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1615C1423FED7BB00D5CF4A;
+			remoteInfo = SimpleXPCService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F1615C1023FED73D00D5CF4A /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1615C1323FED7BB00D5CF4A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F1615C3C23FEF00C00D5CF4A /* Copy biz.securing.SimpleXPCService */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				F1615C3D23FEF02B00D5CF4A /* biz.securing.SimpleXPCService in Copy biz.securing.SimpleXPCService */,
+			);
+			name = "Copy biz.securing.SimpleXPCService";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F1615BEA23FED6EB00D5CF4A /* SimpleXPCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleXPCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1615BED23FED6EB00D5CF4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1615BEF23FED6EB00D5CF4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1615BF123FED6ED00D5CF4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1615BF423FED6ED00D5CF4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1615BF623FED6ED00D5CF4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1615BF723FED6ED00D5CF4A /* SimpleXPCApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleXPCApp.entitlements; sourceTree = "<group>"; };
+		F1615C1523FED7BB00D5CF4A /* biz.securing.SimpleXPCService */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = biz.securing.SimpleXPCService; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1615C1723FED7BB00D5CF4A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F1615C1D23FED9CB00D5CF4A /* SimpleXPCProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleXPCProtocol.swift; sourceTree = "<group>"; };
+		F1615C3023FEDAE500D5CF4A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F1615C3323FEDBF000D5CF4A /* XPCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCDelegate.swift; sourceTree = "<group>"; };
+		F1615C3523FEE87B00D5CF4A /* HelperInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperInstaller.swift; sourceTree = "<group>"; };
+		F1615C3823FEE90700D5CF4A /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		F1615C3E23FEF0BE00D5CF4A /* launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = launchd.plist; sourceTree = "<group>"; };
+		F1615C3F23FEF0BE00D5CF4A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1615C4223FF147500D5CF4A /* ConnectionVerifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionVerifier.swift; sourceTree = "<group>"; };
+		F1615C4423FF233A00D5CF4A /* biz.securing.SimpleXPCService-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "biz.securing.SimpleXPCService-Bridging-Header.h"; sourceTree = "<group>"; };
+		F1615C4523FF233A00D5CF4A /* AuditTokenHack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuditTokenHack.h; sourceTree = "<group>"; };
+		F1615C4723FFE46B00D5CF4A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F1615C4A23FFF5C700D5CF4A /* AuditTokenHack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuditTokenHack.m; sourceTree = "<group>"; };
+		F1615C4C2400305E00D5CF4A /* securing_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = securing_logo.png; sourceTree = "<group>"; };
+		F1615C4E240036C500D5CF4A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1615BE723FED6EB00D5CF4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1615C3923FEE90700D5CF4A /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1615C1223FED7BB00D5CF4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1615C4F240036C500D5CF4A /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1615BE123FED6EB00D5CF4A = {
+			isa = PBXGroup;
+			children = (
+				F1615C1C23FED8ED00D5CF4A /* Shared */,
+				F1615BEC23FED6EB00D5CF4A /* SimpleXPCApp */,
+				F1615C1623FED7BB00D5CF4A /* SimpleXPCService */,
+				F1615BEB23FED6EB00D5CF4A /* Products */,
+				F1615C3723FEE90700D5CF4A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1615BEB23FED6EB00D5CF4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1615BEA23FED6EB00D5CF4A /* SimpleXPCApp.app */,
+				F1615C1523FED7BB00D5CF4A /* biz.securing.SimpleXPCService */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1615BEC23FED6EB00D5CF4A /* SimpleXPCApp */ = {
+			isa = PBXGroup;
+			children = (
+				F1615BED23FED6EB00D5CF4A /* AppDelegate.swift */,
+				F1615BEF23FED6EB00D5CF4A /* ViewController.swift */,
+				F1615BF123FED6ED00D5CF4A /* Assets.xcassets */,
+				F1615BF323FED6ED00D5CF4A /* Main.storyboard */,
+				F1615BF623FED6ED00D5CF4A /* Info.plist */,
+				F1615C4C2400305E00D5CF4A /* securing_logo.png */,
+				F1615BF723FED6ED00D5CF4A /* SimpleXPCApp.entitlements */,
+				F1615C3523FEE87B00D5CF4A /* HelperInstaller.swift */,
+			);
+			path = SimpleXPCApp;
+			sourceTree = "<group>";
+		};
+		F1615C1623FED7BB00D5CF4A /* SimpleXPCService */ = {
+			isa = PBXGroup;
+			children = (
+				F1615C3F23FEF0BE00D5CF4A /* Info.plist */,
+				F1615C3E23FEF0BE00D5CF4A /* launchd.plist */,
+				F1615C1723FED7BB00D5CF4A /* main.swift */,
+				F1615C3323FEDBF000D5CF4A /* XPCDelegate.swift */,
+				F1615C4223FF147500D5CF4A /* ConnectionVerifier.swift */,
+				F1615C4523FF233A00D5CF4A /* AuditTokenHack.h */,
+				F1615C4A23FFF5C700D5CF4A /* AuditTokenHack.m */,
+				F1615C4423FF233A00D5CF4A /* biz.securing.SimpleXPCService-Bridging-Header.h */,
+			);
+			path = SimpleXPCService;
+			sourceTree = "<group>";
+		};
+		F1615C1C23FED8ED00D5CF4A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F1615C1D23FED9CB00D5CF4A /* SimpleXPCProtocol.swift */,
+				F1615C3023FEDAE500D5CF4A /* Constants.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F1615C3723FEE90700D5CF4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1615C4E240036C500D5CF4A /* AppKit.framework */,
+				F1615C4723FFE46B00D5CF4A /* Security.framework */,
+				F1615C3823FEE90700D5CF4A /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1615BE923FED6EB00D5CF4A /* SimpleXPCApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1615BFA23FED6ED00D5CF4A /* Build configuration list for PBXNativeTarget "SimpleXPCApp" */;
+			buildPhases = (
+				F1615BE623FED6EB00D5CF4A /* Sources */,
+				F1615BE723FED6EB00D5CF4A /* Frameworks */,
+				F1615BE823FED6EB00D5CF4A /* Resources */,
+				F1615C1023FED73D00D5CF4A /* Embed XPC Services */,
+				F1615C3C23FEF00C00D5CF4A /* Copy biz.securing.SimpleXPCService */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1615C3B23FEEF4F00D5CF4A /* PBXTargetDependency */,
+			);
+			name = SimpleXPCApp;
+			productName = SimpleXPCApp;
+			productReference = F1615BEA23FED6EB00D5CF4A /* SimpleXPCApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1615C1423FED7BB00D5CF4A /* biz.securing.SimpleXPCService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1615C1923FED7BB00D5CF4A /* Build configuration list for PBXNativeTarget "biz.securing.SimpleXPCService" */;
+			buildPhases = (
+				F1615C1123FED7BB00D5CF4A /* Sources */,
+				F1615C1223FED7BB00D5CF4A /* Frameworks */,
+				F1615C1323FED7BB00D5CF4A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = biz.securing.SimpleXPCService;
+			productName = SimpleXPCService;
+			productReference = F1615C1523FED7BB00D5CF4A /* biz.securing.SimpleXPCService */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1615BE223FED6EB00D5CF4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = WR;
+				TargetAttributes = {
+					F1615BE923FED6EB00D5CF4A = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					F1615C1423FED7BB00D5CF4A = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = F1615BE523FED6EB00D5CF4A /* Build configuration list for PBXProject "SimpleXPCApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1615BE123FED6EB00D5CF4A;
+			productRefGroup = F1615BEB23FED6EB00D5CF4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1615BE923FED6EB00D5CF4A /* SimpleXPCApp */,
+				F1615C1423FED7BB00D5CF4A /* biz.securing.SimpleXPCService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1615BE823FED6EB00D5CF4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1615C4D2400305E00D5CF4A /* securing_logo.png in Resources */,
+				F1615BF223FED6ED00D5CF4A /* Assets.xcassets in Resources */,
+				F1615BF523FED6ED00D5CF4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1615BE623FED6EB00D5CF4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1615C3623FEE87B00D5CF4A /* HelperInstaller.swift in Sources */,
+				F1615C1E23FED9CB00D5CF4A /* SimpleXPCProtocol.swift in Sources */,
+				F1615BF023FED6EB00D5CF4A /* ViewController.swift in Sources */,
+				F1615BEE23FED6EB00D5CF4A /* AppDelegate.swift in Sources */,
+				F1615C3123FEDAE500D5CF4A /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1615C1123FED7BB00D5CF4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1615C1823FED7BB00D5CF4A /* main.swift in Sources */,
+				F1615C1F23FED9CB00D5CF4A /* SimpleXPCProtocol.swift in Sources */,
+				F1615C4B23FFF5C700D5CF4A /* AuditTokenHack.m in Sources */,
+				F1615C4623FF233A00D5CF4A /* AuditTokenHack.h in Sources */,
+				F1615C4323FF147500D5CF4A /* ConnectionVerifier.swift in Sources */,
+				F1615C3423FEDBF000D5CF4A /* XPCDelegate.swift in Sources */,
+				F1615C3223FEDAE500D5CF4A /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1615C3B23FEEF4F00D5CF4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1615C1423FED7BB00D5CF4A /* biz.securing.SimpleXPCService */;
+			targetProxy = F1615C3A23FEEF4F00D5CF4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1615BF323FED6ED00D5CF4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1615BF423FED6ED00D5CF4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1615BF823FED6ED00D5CF4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1615BF923FED6ED00D5CF4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F1615BFB23FED6ED00D5CF4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleXPCApp/SimpleXPCApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q4GTM2NEQD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SimpleXPCApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = biz.securing.SimpleXPCApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F1615BFC23FED6ED00D5CF4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleXPCApp/SimpleXPCApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q4GTM2NEQD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SimpleXPCApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = biz.securing.SimpleXPCApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F1615C1A23FED7BB00D5CF4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4GTM2NEQD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/SimpleXPCService/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"\"$(SRCROOT)/SimpleXPCService/Info.plist\"",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"\"$(SRCROOT)/SimpleXPCService/launchd.plist\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleXPCService/biz.securing.SimpleXPCService-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F1615C1B23FED7BB00D5CF4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4GTM2NEQD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/SimpleXPCService/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"\"$(SRCROOT)/SimpleXPCService/Info.plist\"",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"\"$(SRCROOT)/SimpleXPCService/launchd.plist\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleXPCService/biz.securing.SimpleXPCService-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1615BE523FED6EB00D5CF4A /* Build configuration list for PBXProject "SimpleXPCApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1615BF823FED6ED00D5CF4A /* Debug */,
+				F1615BF923FED6ED00D5CF4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1615BFA23FED6ED00D5CF4A /* Build configuration list for PBXNativeTarget "SimpleXPCApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1615BFB23FED6ED00D5CF4A /* Debug */,
+				F1615BFC23FED6ED00D5CF4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1615C1923FED7BB00D5CF4A /* Build configuration list for PBXNativeTarget "biz.securing.SimpleXPCService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1615C1A23FED7BB00D5CF4A /* Debug */,
+				F1615C1B23FED7BB00D5CF4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1615BE223FED6EB00D5CF4A /* Project object */;
+}
